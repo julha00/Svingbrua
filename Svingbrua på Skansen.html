@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <title>Skansen svingbru</title>
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="descriotion" content="Dette er en nettsiden for Svingbrua på Skansen Svingbru">
     <meta name="author" content="Julie.Hall">
@@ -22,256 +23,377 @@
 </head>
 
 <style>
-     body { font-family: 'Times New Roman', Times, serif}
+.clearfix {
+    overflow: auto;
+}  
 
-     .clearfix {
-        overflow: auto;
-    }
+.header {  
+    padding: 25px;
+    text-align: center ;
+    background: beige;
+}    
+           
+.header h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-     
 
-    .header {  
-        padding: 25px;
-        text-align: center ;
-        background: rgb(70, 116, 131);
-    }
-       
-    .header h1 {
-        font-size: 50px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
-        .spaceÅpingstider {
-            margin-top: 100px;
-            margin-bottom: 100px;
-            margin-right: 250px;
-            margin-left: 250px;
-        }
+.headerStatus{ 
+    padding: 100px;
+    text-align: center
+}
 
-        .headerÅpningstider {  
-            padding: 100px;
-            text-align: center;
-            background: rgb(70, 116, 131);
-            font-family: 'Times New Roman', Times, serif
-        }
+.headerh1Status {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-        .headerh1Åpningstider {
-            font-size: 50px;
-        }
+.spaceStatus {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
 
-        .pÅpningstider {
-            text-align: center;
-            text-align: justify;
-            text-decoration: none;
-            line-height: 0.8cm;
-        }
-    
+.pStatus{
+    text-decoration: none;
+    line-height: 0.8cm;
+}
         
-    .headerHistorie{
-        font-family: 'Times New Roman', Times, serif;;
-        padding: 100px;
-        text-align: center;
-        background: rgb(70, 116, 131);
-    }
-    
-    .headerh1Historie {
-        font-size: 60px;
-        font-family: 'Times New Roman', Times, serif;;
+.spaceStatus {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.plassStatus{
+    margin-top: 25px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.imgStatus{
+    float: bottom
+}
+
+
+
+
+
+
 
     
-    }
+.headerÅpningstider { 
+    padding: 100px;
+    text-align: center
+}
+
+.headerh1Åpningstider {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.spaceÅpingstider {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.pÅpningstider {
+    text-decoration: none;
+    line-height: 0.8cm;
+}
         
-    .topnavaHistorie {
-        float: center;
-        display: block;
-        text-align: center;
-        padding: 20px 20px;
-        text-decoration: none;
-    }
+.spaceÅpingstider {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
 
-    .columnHistprie {
-        float: right;
-        width: 50%
-        height 50%
-    }
+.plassÅpningstider {
+    margin-top: 25px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
 
-    .imgHsitprie {
-        float: bottom
-    }
+.topnavaÅpningstider {
+    float: center;
+    display: block;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
 
-    .clearfix {
-        overflow: auto;
-    }
+.imgÅpningstider{
+    float: bottom
+}
+
+.headerOmOss{ 
+    padding: 100px;
+    text-align: center
+}
+
+.headerh1OmOss{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.spaceOmOss {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.pOmOss{
+    text-decoration: none;
+    line-height: 0.8cm;
+}
         
-    .pHistorie {
-        font-family: 'Times New Roman', Times, serif;;
-        text-align: center;
-        text-align: justify;
-        text-decoration: none;
-        line-height: 0.8cm;
-    }
+.spaceOmOss {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
 
-    .spaceHistprie {
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-right: 250px;
-        margin-left: 250px;
-    }
+.plassOmOss {
+    margin-top: 25px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
 
-    .plassHistorie {
-        margin-top: 25;
-        margin-bottom: 100px;
-        margin-right: 250px;
-        margin-left: 250px;
-    }
+.imgOmOss{
+    float: bottom
+}
     
-    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-     @media screen and (max-width: 800px) {
-    .columnHistorie .imgHistorie {   
-        width: 50%;
-        padding: 0;
-        float: 100}
-    }
 
-     /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-     @media screen and (max-width: 400px) {
-    .topnavaHistorie {
-        float: none;
-        width: 100%;}
-    }
+        
+.headerHistorie { 
+    padding: 100px;
+    text-align: center
+}
 
-</style>
+.headerh1Historie {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
+.spaceHistorie {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
 
+.pHistorie{
+    text-decoration: none;
+    line-height: 0.8cm;
+}
+        
+.spaceHistorie {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
 
+.plassHistorie {
+    margin-top: 25px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
+}
 
+.topnavaHistorie {
+    float: center;
+    display: block;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
 
+.columnHistprie {
+    float: right;
+    width: 50%
+    height 50%
+}
 
+.imgHistorie{
+    float: bottom
+}
+    
 
 </style>
 
 
 <body>
-    
-<!--Startsiden-->
-    <!--Navbar-->
-    <header>
-        <nav>
-            <div class="w3-top">
-                <div class="w3-bar w3-card">
-                    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-                    <a href="#Hjem" class="w3-bar-item w3-button w3-padding-large"><b>Hjem</b></a>
-                    <a href="#Status"  class="w3-bar-item w3-button w3-padding-large"><b>Status</b></a>
-                    <a href="#Åpningstider" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>Åpningstid</b></a>
-                    <a href="#Om oss" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><b>Om oss</b></a>
-                <div class="w3-dropdown-hover w3-hide-small">
+<body style = "Background-color: beige; font-family: 'Times New Roman', Times, serif">
+
+        <!--Startsiden-->
+            <!--Navbar-->
+            <header>
+                <nav>
+                    <div class="w3-top">
+                        <div class="w3-bar w3-card">
+                            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                            <a href="#" class="w3-bar-item w3-hover-white  w3-button w3-padding-large"><b>Hjem</b></a>
+                            <a href="#status"  class="w3-bar-item w3-hover-white w3-button w3-padding-large"><b>Status</b></a>
+                            <a href="#åpningstider" class="w3-bar-item w3-button w3-hover-white w3-padding-large w3-hide-small"><b>Åpningstid</b></a>
+                            <a href="#om oss" class="w3-bar-item w3-button w3-hover-white w3-padding-large w3-hide-small"><b>Om oss</b></a>
+                            <a href="#Historie"  class="w3-bar-item w3-hover-white w3-button w3-padding-large"><b>Historie</b></a>
+                            <a href="#Kontakt oss"  class="w3-bar-item w3-hover-white w3-button w3-padding-large"><b>Kontakt oss</b></a>
+
+
+                        <div class="w3-dropdown-hover w3-hide-small">
+                        
+                            <button class="w3-padding-large w3-button w3-hover-white " title="Mer"><b>Mer</b><i class="fa fa-caret-down"></i></button>
+                        
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a href="#" class="w3-bar-item w3-button w3-hover-white">Kart</a>
+                        </div>
                 
-                    <button class="w3-padding-large w3-button" title="Mer"><b>Mer</b><i class="fa fa-caret-down"></i></button>
-                
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="#Historie" class="w3-bar-item w3-button">Historie</a>
-                    <a href="#Kontakt Ooss" class="w3-bar-item w3-button">Kontakt oss</a>
-                    <a href="#Kart" class="w3-bar-item w3-button">Kart</a>
-                </div>
-        
-                </div>
-                    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-                </div>
-            </div>
-        </nav>
-    </header>
+                        </div>
+                            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Hjem</a>
+        <a href="#status" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Status</a>
+        <a href="#åpningstider" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Åpningstid</a>
+        <a href="#om oss" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Om oss</a>
+        <a href="#historie" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Historie</a>
+    </div>
 
     <!--Photo-->
     <div>
-        <img src= "NTNU/HTML/bilder/svingbrua-1.jpg" style ="width:100%">
+        <img src= "IMG_1977-kopi.jpg" style ="width:100%">
     </div>
 
    <!--Header-->
     <div class = "header">
-        <h1>Svingbrua på Skansen i Trondheim</h1>
+        <h1>Svingbrua på Skansen</h1>
         <p><i><center>Gang- og sykkelbru for store og små</center></i></p>
     </div>
 
 
 
 
+    <!--Status-->
+    <div class = "spaceStatus"></div>
+    <div class = "plassStatus"></div>
+
+    
 
 
-
-
-<!--Status-->
-
-
-<!--Åpningstider-->
- <div class="headerÅpningstider">
-                <h1>Åpningstid</h1>
+     <!--Åpningstider-->
+    <div class="headerÅpningstider">
+                <h1><center>Åpningstider</center></h1>
             </div>
 
-
-<!--Om oss-->
-<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">Om oss</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">Introduksjon
-    
-    </p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
-
- 
-
-
-<!--Historie-->
-<div class="headerHistorie">
-    <h1>Bruas historie</h1>
-    
-    <div class="row">
-        
-        <div class="columnHistorie">
-            <div class="spaceHistprie">
-
-                <div class="pHistorie">                            
-                    <p>
-                        Svingbrua på Skansen i Trondheim er en gang- og sykkelbro som går ved siden av Skansenbrua ved riksveien 706, med sitt navn, svingbru, så kan den midterste delen av svinge for slippe kryssende båltrafikk forbi.
-                        Denne svinge-teknologien ble faktisk brukt første gang på ei bru i Norge.
-                        Selveste brua ble bygd i november 2013, og Høsten 2014 var brua offisielt åpnet. 
-                        Hensikten bak bygging av  brua er at den åpner for båter inn og ut av Skansenløpet omtrent 1500 ganger i året, men ikke minst som et alternativ for Skansentunnelen hvor det er påbudt for fotgjengere og syklister. 
-                    </p>
-                </div>
-                
-                <div class="imgHistorie">
-                    <img src= "NTNU/HTML/bilder/Skansen.jpg" style = "width: 100%;">
-                </div>
+        <div class="#åpningstider">
             
+            <div class="spaceÅpingstider">
+                <div class="pÅpningstider">
+                            <p>
+                                <center>Svingbrua er alltid åpent om morgen og ettermiddag.</center>
+                            </p>
+                            
+                            <p>
+                                <center>
+                                Kl.0635 - 1005 
+                                Kl. 1335  - 1740
+                                </center>
+                            </p> 
+                </div>
+                        
+                    <div class="imgÅpningstider">
+                            <img src= "IMG_1972-kopi.jpg" style = "width: 100%;">
+                        </div>
+                    </div>
             </div>
-         </div>
-       
-
-        <div class="column">
-            <div class="plassHistorie">
                 
-                <div class="pHistorie">     
-                    <p> 
-                        Brua har en totaltlengden på 100 meter, og binder sammen en 450 meter gang- og sykkelvei langs Nordre avlastningsvei på Brattøya og Ila. 
-                        Her kan du nyte det vakre friluftsområdet på Skansen og Brattøra.                       
+
+                <div class="plassÅpningstider">
+                        <div class="pÅpningstider">     
+                            <p>
+                                <justify>
+                                    Åpningstidene er tilpasset både for togtrafikk, båttrafikk i kanalen samt for gående og syklende.
+                                    LED-skiltet ved Skansen vil vise om buas status. Dersom brua er stegnt, kan den blir stengt inntil 20 minutter.
+                                    Bilder under viser en annen alternativ rute hvis brua er stengt. Stripet linje er omveien når brua er stengt
+                                </justify>
+                            </p> 
+                        </div>
+                                            
+                    <div class="imgÅpningstider">
+                            <img src="Skjermbilde 2020-10-22 kl. 10.50.32 am.png" style = "width: 100%;">
+                        </div>
+                    
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    <!--Om oss-->
+    <div class=".headerOmOss">
+        </div>
+            <h1><center>Om Oss</center></h1>
+        </div>
+
+     <div class="#Om Oss">
+    
+        <div class="spaceOmOss">
+
+                <div class="pOmOss">                            
+                    <p>
+                        <justify>
+                            Hei! Takk for at du bruker denne siden. Vi er nemlig studenter fra NTNU som går i Elektronisk systemdesign og innovasjon (Elsys).
+                            Hvert år i Elsys-faget oppretter de et nytt innovasjonsporsjekt og i år skal NTNU jobbe med et prosjekt i samarbeid med Miljøpakken i Trondheim kommune.
+                            Tema for Invorvasjonsprosjektet for 2020-kullet handler om å gjøre opplevelsen av å gå eller sykle  mer attraktiv, tryggere og lettere.
+                        </justify>
+                    </p>
+                
+                    <p>
+                        <justify>
+                            Konspetet for vårt innvoasjonsprosjekt er å utvikle et varslingssystem for Skansens svingbru i Trondheim. 
+                            Ut fra <a href= "https://www.google.com/maps/d/u/0/viewer?mid=1Sl34J8zyfzC08-QsDQSHNkhptOhlRlEy&ll=63.41231719290945%2C10.390300013526144&z=13" target="_blank">kartet</a>
+                            fra Miljøpakken fikk vi vite at det er for øyeblikk dårlig informasjon for sykelister og gående om status på Svinbrua ved Skansen.
+                            Dette vil vi pørve å forbedres i, og vår løsning er å lage en LED-skjerm som er lett synlig på sykkelstrekningen mellom Brattøra og Skansen.
+                            LED-Skjermet samt denne nettsiden vil forteller sykelister og gående om statusen i Svingbrua.
+                        </justify>
                     </p>
                 </div>
                                     
-               <div class="imgHistorie">
-                    <img src="NTNU/HTML/bilder/svingbrua-4.jpg" style = "width: 100%;">
+                <div class="imgHistorie">
+                    <img src="IMG_1976-kopi.jpg" style = "width: 100%;">
                 </div>
             
             </div>
@@ -279,32 +401,83 @@
     </div>
 
 
-<!--Kontakt oss-->
-<div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
+ 
+ 
+    
+    <!--Historie-->
+    <div class=".headerHistprie">
     </div>
-  </div>
+        <h1><center>Bruas Historie</center></h1>
+    </div>
+
+    <div class="#historie">
+    
+        <div class="spaceHistorie">
+
+                <div class="pHistorie">                            
+                    <p>
+                        <justify>
+                            Svingbrua på Skansen i Trondheim er en gang- og sykkelbro som går ved siden av Skansenbrua ved riksveien 706, med sitt navn, svingbru, så kan den midterste delen av svinge for slippe kryssende båltrafikk forbi.
+                            Denne svinge-teknologien ble faktisk brukt første gang på ei bru i Norge.
+                            Selveste brua ble bygd i november 2013, og Høsten 2014 var brua offisielt åpnet. 
+                            Hensikten bak bygging av  brua er at den åpner for båter inn og ut av Skansenløpet omtrent 1500 ganger i året, men ikke minst som et alternativ for Skansentunnelen hvor det er påbudt for fotgjengere og syklister. 
+                        </justify>
+                    </p>
+                </div>
+                
+                <div class="imgHistorie">
+                    <img src= "IMG_1971-kopi.jpg" style = "width: 100%;">
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="plassHistorie">
+                <div class="pHistorie">     
+                    <p>
+                        <justify>
+                            Brua har en totaltlengden på 100 meter, og binder sammen en 450 meter gang- og sykkelvei langs Nordre avlastningsvei på Brattøya og Ila. 
+                            Her kan du nyte det vakre friluftsområdet i Skansen og Brattøra.
+                        </justify>
+                    </p>
+                </div>
+                                    
+            <div class="imgHistorie">
+                    <img src="IMG_1975-kopi.jpg" style = "width: 100%;">
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Kontakt oss-->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">Kontakt oss</h2>
+        <p class="w3-opacity w3-center"><i>Gir oss en tilbakemelding</i></p>
+        <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Trondheim, Høgskoleringen 1, 7491<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        </div>
+        <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                </div>
+                <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            </form>
+        </div>
+        </div>
+    </div>
 
 
 
@@ -326,7 +499,9 @@
 
 
 
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-beige w3-xlarge">
+    <footer style = "Background-color: beige; font-family: 'Times New Roman', Times, serif">
+
         <div class="w3-button">
             <i class="fa fa-facebook-official w3-hover-opacity"></i><p class="w3-medium">Del på Favebook <a href="Link" target="_blank">w3.css</a></p>
             <i class="fa fa-instagram w3-hover-opacity"></i><p class="w3-medium">Del på Instagram <a href="Link" target="_blank">w3.css</a></p>
@@ -334,3 +509,22 @@
         </div>
 </footer>
 
+<!--Used to toggle the menu on small screens when clicking on the menu button-->
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
